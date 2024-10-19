@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Criação de Sites & Design - Davi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <img class="logo" src="Logo intsa_20240919_161251_0000.png" alt="Logo">
+            <div class="header-text">
+                <h1>Criação de Sites & Design</h1>
+                <p>Transformando sua presença digital com criatividade</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de carrossel -->
+    <section class="carousel">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-carousel">
+                <div class="carousel-item">
+                    <div class="service-block">
+                        <img src="sites.jpg" alt="Desenvolvimento de Sites" class="service-img">
+                        <div class="service-text">
+                            <h3 style="color: aqua;">Desenvolvimento de Sites</h3>
+                            <p>Ter um site profissional, moderno e responsivo é essencial para qualquer negócio. Ele serve como a base para sua presença digital, ajudando a atrair e converter clientes. Um site bem projetado não só reforça a credibilidade da sua marca, mas também oferece uma plataforma para expandir suas operações e alcançar um público mais amplo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-block">
+                        <img src="designs.png" alt="Design Gráfico" class="service-img">
+                        <div class="service-text">
+                            <h3 style="color: aqua;">Design Gráfico</h3>
+                            <p>Um design gráfico criativo e personalizado é crucial para construir a identidade visual da sua marca. Ele inclui a criação de logotipos, materiais promocionais e muito mais. Um design bem elaborado ajuda a diferenciar sua marca da concorrência, melhorar o reconhecimento e criar uma conexão emocional com seu público-alvo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preços Detalhada -->
+    <section class="pricing-table">
+        <div class="container">
+            <h2>Preços por Tipo de Site</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Site</th>
+                        <th>Faixa de Preço</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Landing Page</td>
+                        <td>R$ 1.200,00 – R$ 1.800,00</td>
+                        <td>Página única focada em converter visitantes em leads ou clientes, geralmente utilizada para campanhas de marketing ou lançamento de produtos.</td>
+                    </tr>
+                    <tr>
+                        <td>Institucional</td>
+                        <td>R$ 2.500,00 – R$ 4.000,00</td>
+                        <td>Site informativo sobre uma empresa ou organização, apresentando sua história, missão, visão, produtos e serviços.</td>
+                    </tr>
+                    <tr>
+                        <td>Portal de Notícias</td>
+                        <td>R$ 3.000,00 – R$ 5.000,00</td>
+                        <td>Plataforma dinâmica para publicação e organização de notícias, artigos e informações diversas, com recursos de atualização frequente e interatividade.</td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce</td>
+                        <td>R$ 5.000,00 – R$ 7.000,00</td>
+                        <td>Loja virtual completa com funcionalidades de compra, pagamento, carrinho de compras, gerenciamento de estoque e integração de métodos de pagamento.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-info">
+                <img src="insta.jpg" alt="Instagram" class="instagram-icon">
+                <p>Siga-nos no Instagram: <a href="https://instagram.com/sitesedesignsdavi">@sitesedesignsdavi</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Criação de Sites & Design Davi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.service-carousel').slick({
+                dots: false,
+                infinite: true,
+                speed: 1500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3500,
+            });
+        });
+    </script>
+</body>
+</html>
